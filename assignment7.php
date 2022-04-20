@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Assignment-7</title>
 </head>
 <body>
-      <!-- Question 01:
+        <?php 
+
+            /*Question 01:
 		Let’s make an exam question set (add at list 10 dummy question) like that
 	$questionSet = [
 
                         [
-                            'question-1' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
                             ]
                         ],
 
                         [
-                            'question'-2 => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -27,7 +32,7 @@
                         ],
 
                         [
-                            'question-3' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -35,16 +40,7 @@
                         ],
 
                          [
-                            'question-4' => 'What is loream ipsum?',
-                            'options' => [
-                                'ans1', 'ans2', 'ans3', 'ans4'
-
-                            ]
-                        ],
-
-                        
-                         [
-                            'question-5' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -53,7 +49,7 @@
 
                         
                          [
-                            'question-6' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -62,7 +58,7 @@
 
                         
                          [
-                            'question-7' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -71,7 +67,7 @@
 
                         
                          [
-                            'question-8' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -80,7 +76,7 @@
 
                         
                          [
-                            'question-9' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -89,7 +85,16 @@
 
                         
                          [
-                            'question-10' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
+                            'options' => [
+                                'ans1', 'ans2', 'ans3', 'ans4'
+
+                            ]
+                        ],
+
+                        
+                         [
+                            'question' => 'What is loream ipsum?',
                             'options' => [
                                 'ans1', 'ans2', 'ans3', 'ans4'
 
@@ -99,88 +104,105 @@
 
                     #Make a simple exam design using html css
                     #Then make a exam by using these questions
-                    #Your questions must be come randomize order  -->
+                    #Your questions must be come randomize order */
 
 
-                            <?php 
+                        
 
                     $questionSet = [
 
                         [
-                            'question-1' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                         [
-                            'question-2' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [ 'ans1', 'ans2', 'ans3', 'ans4'  ]
                         ],
 
                         [
-                            'question-3' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
                         ],
 
                          [
-                            'question-4' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                          [
-                            'question-5' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
                         ],
                         
                          [
-                            'question-6' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
-                        ],
-
-                        
-                         [
-                            'question-7' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                         
                          [
-                            'question-8' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
+                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
+                        ],
+
+                        
+                         [
+                            'question' => 'What is loream ipsum?',
                             'options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
                         ],
 
                         
                          [
-                            'question-9' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
  
                          [
-                            'question-10' => 'What is loream ipsum?',
+                            'question' => 'What is loream ipsum?',
                             'options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
                             ];
 
-                         foreach($questionSet as $key => $all_questions) {
+                    
+                       
+     ?>
 
-                            print_r($all_questions);
+    <div class="container">
 
-                            // foreach($all_questions as  $questions) {
-
-                            //       echo $questions[0],[1];
+                       <?php     
+                         foreach ($questionSet as $key => $all_questions) { 
+                                       
                         
-                            // } 
+                        foreach ($all_questions as $sub_key => $questions) { 
+                                    
+                          
+                             echo "<br/>"; 
+                            
+                             if (is_array($questions)) {
+                               echo $sub_key . " : <br>"; 
+                               foreach ($questions as $index => $options) { 
+                                   echo $index . " = " . $options . "<br>"; 
 
-                            // foreach($questions as $key => $options) {
-                            //     echo $options. "<br>";
-                            // }
-                            // echo "<pre>";    
-                            // print_r ($questions['options']);
-                            // echo "</pre>";
-                            echo "<br>";
- 
-                         }
+                                 } 
+                            }  else { 
+                               echo $sub_key . " ". ++$key . ") " . $questions .  "<br>" ; 
+                            } 
+                  } 
+                }  
+                
+                ?> 
+                          
+                  
 
-                           ?>
+                            
+       
+    
+                      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+
+</div>
 </body>
 </html>
