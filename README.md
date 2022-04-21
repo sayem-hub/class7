@@ -1,2 +1,2 @@
 # class7
-Making two Mini Project 
+Making dynamic question Mini Project 
