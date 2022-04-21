@@ -7,7 +7,7 @@
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Assignment-7</title>
+    <title>Dynamic Question | Class-7</title>
 </head>
 <body>
         <?php 
@@ -18,9 +18,6 @@
                     #Make a simple exam design using html css
                     #Then make a exam by using these questions
                     #Your questions must be come randomize order */
-
-
-                        
 
                     $questionSet = [
 
@@ -78,8 +75,7 @@
                         ],
                             ];
 
-                    shuffle($questionSet);
-                       
+                shuffle($questionSet);        
         ?>
 
     <div class="container">
@@ -108,8 +104,7 @@
 
                 <?php }   ?>
 
-
-        </div>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
