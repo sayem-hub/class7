@@ -25,97 +25,92 @@
                     $questionSet = [
 
                         [
-                            'question' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
+                            'Question' => 'What is PHP?',
+                            'Options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                         [
-                            'question' => 'What is loream ipsum?',
-                            'options' => [ 'ans1', 'ans2', 'ans3', 'ans4'  ]
+                            'Question' => 'What is Laravel?',
+                            'Options' => [ 'ans1', 'ans2', 'ans3', 'ans4'  ]
                         ],
 
                         [
-                            'question' => 'What is loream ipsum?',
-                            'options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
+                            'Question' => 'What is Mysql?',
+                            'Options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
                         ],
 
                          [
-                            'question' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
+                            'Question' => 'What is Database?',
+                            'Options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                          [
-                            'question' => 'What is loream ipsum?',
-                            'options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
+                            'Question' => 'What is Programming?',
+                            'Options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
                         ],
                         
                          [
-                            'question' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
-                        ],
-
-                        
-                         [
-                            'question' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
+                            'Question' => 'What is Coding?',
+                            'Options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                         
                          [
-                            'question' => 'What is loream ipsum?',
-                            'options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
+                            'Question' => 'What is Web development?',
+                            'Options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
 
                         
                          [
-                            'question' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
+                            'Question' => 'What is Web design?',
+                            'Options' => [ 'ans1', 'ans2', 'ans3', 'ans4' ]
+                        ],
+
+                        
+                         [
+                            'Question' => 'What is Wordpress?',
+                            'Options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
  
                          [
-                            'question' => 'What is loream ipsum?',
-                            'options' => ['ans1', 'ans2', 'ans3', 'ans4']
+                            'Question' => 'What is E-commerce?',
+                            'Options' => ['ans1', 'ans2', 'ans3', 'ans4']
                         ],
                             ];
 
-                    
+                    shuffle($questionSet);
                        
-     ?>
+        ?>
 
     <div class="container">
-
-                       <?php     
-                         foreach ($questionSet as $key => $all_questions) { 
-                                       
-                        
-                        foreach ($all_questions as $sub_key => $questions) { 
-                                    
-                          
-                             echo "<br/>"; 
-                            
-                             if (is_array($questions)) {
-                               echo $sub_key . " : <br>"; 
-                               foreach ($questions as $index => $options) { 
-                                   echo $index . " = " . $options . "<br>"; 
-
-                                 } 
-                            }  else { 
-                               echo $sub_key . " ". ++$key . ") " . $questions .  "<br>" ; 
-                            } 
-                  } 
-                }  
-                
-                ?> 
-                          
-                  
-
-                            
-       
+                            <h3 class="text-center m-3">Please select correct answer of the follwoing questions:</h3>
     
-                      
+                    <?php     
+                         foreach ($questionSet as $key => $all_questions) { ?>                            
+                   <h6 class="fw-bolder"> <?php     foreach ($all_questions as $sub_key => $questions) { ?> 
+                                    
+                             <?php echo "<br/>"; ?> 
+                            
+                           <?php  if (is_array($questions)) {  ?> 
+                            <?php    echo $sub_key . " : <br>"; ?> 
+                          <?php     foreach ($questions as $index => $options) {  ?> 
+                                 <input type="radio" name="answer" value="<?php echo $options; ?>"> 
+                                 <label for =" "><?php echo $options; ?> </label> <br>
+                                 
+                              <?php   }  ?> <br>
+                              <hr>
+
+                            <?php  }  else { 
+                            
+                               echo $sub_key . " ". ++$key . ") " . $questions .  "<br>" ;
+                            } ?>  </h6>
+               <?php   }   ?> 
+
+                <?php }   ?>
+
+
+        </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-</div>
 </body>
 </html>
